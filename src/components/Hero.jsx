@@ -1,3 +1,4 @@
+```jsx
 'use client'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
@@ -72,11 +73,6 @@ export function Hero() {
               { name: textContent.company_2 || 'Loading...', logo: logoTuple },
               { name: textContent.company_3 || 'Loading...', logo: logoStaticKit },
             ],
-            [
-              { name: textContent.company_4 || 'Loading...', logo: logoMirage },
-              { name: textContent.company_5 || 'Loading...', logo: logoLaravel },
-              { name: textContent.company_6 || 'Loading...', logo: logoStatamic },
-            ],
           ].map((group, groupIndex) => (
             <li key={groupIndex}>
               <ul
@@ -96,3 +92,4 @@ export function Hero() {
     </Container>
   )
 }
+```
