@@ -1,3 +1,4 @@
+```
 // fetchTextContent.js
 import AWS from 'aws-sdk'
 
@@ -15,6 +16,7 @@ const tableName = 'funnelAIVariablesCustomV3'
 export async function fetchTextContent() {
   const params = {
     TableName: tableName,
+    Limit: 3,
     // Add any necessary query parameters here
   }
 
@@ -32,3 +34,4 @@ export async function fetchTextContent() {
     return {}
   }
 }
+```
