@@ -7,9 +7,6 @@ import { Container } from '@/components/Container'
 import logoLaravel from '@/images/logos/laravel.svg'
 import logoMirage from '@/images/logos/mirage.svg'
 import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
 import { fetchTextContent } from './fetchTextContent' // Adjust the path as needed
 
 export function Hero() {
@@ -69,9 +66,9 @@ export function Hero() {
         >
           {[
             [
-              { name: textContent.company_1 || 'Loading...', logo: logoTransistor },
-              { name: textContent.company_2 || 'Loading...', logo: logoTuple },
-              { name: textContent.company_3 || 'Loading...', logo: logoStaticKit },
+              { name: textContent.company_1 || 'Loading...', logo: logoLaravel },
+              { name: textContent.company_2 || 'Loading...', logo: logoMirage },
+              { name: textContent.company_3 || 'Loading...', logo: logoStatamic },
             ],
           ].map((group, groupIndex) => (
             <li key={groupIndex}>
